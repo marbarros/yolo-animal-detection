@@ -47,3 +47,32 @@ balanceado/
 
 - `train_sin_test.py`  
   Entrenamiento con partición 80/20
+
+## 🔁 Configuración de datasets (balanceado vs desbalanceado)
+
+Los scripts `train_con_test.py` y `train_sin_test.py` utilizan la misma lógica de entrenamiento.
+
+La diferencia entre los experimentos no se encuentra en el código, sino en la organización del dataset.
+
+### Dataset balanceado
+Se construye asegurando igual cantidad de:
+- imágenes con animales (positivas)
+- imágenes sin animales (negativas)
+
+Esto permite una evaluación equitativa del modelo.
+
+---
+
+### Dataset desbalanceado
+Se genera incorporando una mayor cantidad de imágenes negativas, simulando condiciones reales de cámaras trampa donde predominan imágenes sin fauna.
+
+---
+
+### Importante   !!!
+
+El cambio entre escenarios (balanceado / desbalanceado) se realiza modificando:
+
+- Las carpetas `images/train` y `images/val`
+- La proporción de imágenes positivas y negativas incluidas
+
+Es decir, **los scripts permanecen iguales**, pero el comportamiento del modelo cambia según el dataset utilizado.
