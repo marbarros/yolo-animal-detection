@@ -1,35 +1,38 @@
-# 🧠 YOLO Animal Detection
+# YOLO Animal Detection en Cámaras Trampa
 
-Este proyecto implementa el entrenamiento de modelos YOLO para detección de animales a partir de imágenes provenientes de cámaras trampa.
+Este proyecto implementa el entrenamiento de modelos YOLO para la detección automática de fauna en imágenes provenientes de cámaras trampa.
 
----
-
-## 📌 Enfoques de entrenamiento
-
-Se desarrollan dos estrategias:
-
-### 🔹 Con conjunto de test
-- 70% → entrenamiento (train)
-- 20% → validación (val)
-- 10% → test
-
-### 🔹 Sin conjunto de test
-- 80% → entrenamiento (train)
-- 20% → validación (val)
+Se evalúan distintos escenarios experimentales utilizando datasets balanceados y desbalanceados, con el objetivo de analizar el desempeño del modelo en condiciones controladas y realistas.
 
 ---
 
-## 🎯 Objetivo
+## Referencia
 
-Evaluar el desempeño de distintos modelos YOLO en la detección de fauna, utilizando un dataset balanceado que incluye imágenes con y sin animales.
+Este trabajo se basa en el enfoque presentado en:
+
+**“Detección automática de fauna en imágenes de cámaras trampa utilizando la arquitectura YOLO”**  
+Martina Barros-Silva, Nelcy N. Atehortua-Sanchez, Jorge I. Zapata-Valencia & Sofía Cortiza-Ramos
 
 ---
 
-## ⚙️ Tecnologías
+## Objetivo
 
-- Python
+Evaluar el desempeño de modelos YOLO en la detección de animales, considerando:
+
+- Diferentes tamaños de modelo (nano vs small)
+- Distintas particiones del dataset
+- Impacto de datasets balanceados vs desbalanceados
+- Influencia de imágenes negativas (sin animales)
+
+---
+
+## Tecnologías utilizadas
+
+- Python 3
 - Ultralytics YOLO
 - NumPy
 - Pandas
 - Matplotlib
 - Visual Studio Code
+
+---
