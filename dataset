@@ -1,0 +1,49 @@
+## Dataset utilizado
+
+El dataset fue construido a partir de imágenes de cámaras trampa e incluye:
+
+- Imágenes con presencia de animales (positivas)
+- Imágenes sin animales (negativas)
+
+Se trabajó con dos configuraciones principales:
+
+### Dataset balanceado
+- Igual cantidad de imágenes positivas y negativas
+- Ejemplo:
+  - 264 positivas
+  - 264 negativas
+
+### Dataset desbalanceado
+- Mayor cantidad de imágenes negativas (escenario real)
+- Ejemplo:
+  - 184 positivas
+  - 504 negativas
+
+---
+
+## 📁 Organización del dataset (local)
+
+El dataset se estructuró de la siguiente manera:
+
+balanceado/
+├── images/
+│ ├── train/
+│ └── val/
+├── labels/
+│ ├── train/
+│ └── val/
+├── fondo/
+└── labelsF/
+
+> Nota: El dataset no se incluye en el repositorio por su tamaño.
+
+## 🧾 Scripts incluidos
+
+- `generar_labels_vacios.py`  
+  Genera archivos `.txt` vacíos para imágenes sin anotaciones (fondo)
+
+- `train_con_test.py`  
+  Entrenamiento con partición 70/20/10
+
+- `train_sin_test.py`  
+  Entrenamiento con partición 80/20
