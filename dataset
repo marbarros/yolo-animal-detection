@@ -39,6 +39,9 @@ balanceado/
 
 ## 🧾 Scripts incluidos
 
+- `experimento_colab.py`  
+  Pruebas iniciales realizadas en Google Colab para evaluar tiempos de entrenamiento y comportamiento del modelo variando el número de épocas.
+
 - `generar_labels_vacios.py`  
   Genera archivos `.txt` vacíos para imágenes sin anotaciones (fondo)
 
