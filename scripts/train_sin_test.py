@@ -6,6 +6,10 @@ Entrena modelos YOLO utilizando una partición:
 80% entrenamiento / 20% validación.
 
 No se utiliza conjunto de test.
+
+# Nota:
+# Este script se utiliza tanto para datasets balanceados como desbalanceados.
+# La diferencia depende de cómo esté construido el dataset en las carpetas.
 """
 
 # ==========================================================
